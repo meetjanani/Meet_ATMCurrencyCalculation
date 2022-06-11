@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atmAmountValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/str_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/atm100CurrencyNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atm100CurrencyNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_0"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+        app:layout_constraintEnd_toStartOf="@id/atm200CurrencyNote"
+        app:layout_constraintStart_toEndOf="@id/atmAmountValueTextView"
+        app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atm200CurrencyNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_0"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toStartOf="@id/atm500CurrencyNote"
+        app:layout_constraintStart_toEndOf="@id/atm100CurrencyNote"
+        app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+        app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atm500CurrencyNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_0"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toStartOf="@id/atm2000CurrencyNote"
+        app:layout_constraintStart_toEndOf="@id/atm200CurrencyNote"
+        app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+        app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atm2000CurrencyNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_0"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/atm500CurrencyNote"
+        app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+        app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ATMAmountWithCurrencyDivisionBinding">
+        <variable
+            name="model"
+            type="com.atmcurrencycalculation.model.ATMLoadCurrencyModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:elevation="@dimen/_10sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:text="@string/str_atm_amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toTopOf="@id/atmAmountValueTextView"
+                    app:layout_constraintEnd_toStartOf="@id/atmAmount100"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmount100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rs_100"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountTextView"
+                    app:layout_constraintEnd_toStartOf="@id/atmAmount200"
+                    app:layout_constraintStart_toEndOf="@id/atmAmountTextView"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmount200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rs_200"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountTextView"
+                    app:layout_constraintEnd_toStartOf="@id/atmAmount500"
+                    app:layout_constraintStart_toEndOf="@id/atmAmount100"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmount500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rs_500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountTextView"
+                    app:layout_constraintEnd_toStartOf="@id/atmAmount2000"
+                    app:layout_constraintStart_toEndOf="@id/atmAmount200"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmount2000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/str_rs_2000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/atmAmount500"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atmAmountValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@{Integer.toString(model.amount)}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/atmAmountTextView"
+                    app:layout_constraintTop_toBottomOf="@id/atmAmountTextView" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atm100CurrencyNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{Integer.toString(model.rs100)}"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+                    app:layout_constraintEnd_toEndOf="@id/atmAmount100"
+                    app:layout_constraintStart_toStartOf="@id/atmAmount100"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atm200CurrencyNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{Integer.toString(model.rs200)}"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintEnd_toEndOf="@id/atmAmount200"
+                    app:layout_constraintStart_toStartOf="@id/atmAmount200"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atm500CurrencyNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{Integer.toString(model.rs500)}"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+                    app:layout_constraintEnd_toEndOf="@id/atmAmount500"
+                    app:layout_constraintStart_toStartOf="@id/atmAmount500"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/atm2000CurrencyNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{Integer.toString(model.rs2000)}"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/atmAmountValueTextView"
+                    app:layout_constraintEnd_toEndOf="@id/atmAmount2000"
+                    app:layout_constraintStart_toStartOf="@id/atmAmount2000"
+                    app:layout_constraintTop_toTopOf="@id/atmAmountValueTextView"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

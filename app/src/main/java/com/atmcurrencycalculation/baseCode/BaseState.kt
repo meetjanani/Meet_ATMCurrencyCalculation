@@ -1,0 +1,3 @@
+package com.atmcurrencycalculation.baseCode
+
+interface BaseState

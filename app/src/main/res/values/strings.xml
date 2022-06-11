@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ATM Currency Calculation</string>
+    <string name="str_atm_amount">ATM Amount</string>
+    <string name="str_rs_100">Rs. 100</string>
+    <string name="str_rs_200">Rs. 200</string>
+    <string name="str_rs_500">Rs. 500</string>
+    <string name="str_rs_2000">Rs. 2000</string>
+    <string name="str_rs_5000">Rs. 5000</string>
+    <string name="str_enter_your_withdraw_amount">Enter your withdraw amount</string>
+    <string name="str_last_transaction">Last Transaction</string>
+    <string name="str_0">0</string>
+    <string name="str_withdraw">WITHDRAW</string>
+</resources>

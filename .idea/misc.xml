@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/drawable/rounded_corder_button_style.xml" value="0.1" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/activity_atm_currency_calculation.xml" value="0.1" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/activity_main.xml" value="0.2994791666666667" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/atm_amount_with_currency_division.xml" value="0.15338042381432895" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/last_transaction_currency_division.xml" value="0.31068840579710144" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/layout_transaction_header.xml" value="0.15534420289855072" />
+        <entry key="..\:/Android Kotlin/github/ATM Money Calculation/ATM Currency Calculation/app/src/main/res/layout/pattern_transaction_history.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
